@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate') %>
+    <div class="container">
+        <form action="/register" method="post" class="register">
+            <div class="container govind">
+                <div>
+                    <h1>Signup</h1>
+                </div>
+
+                <div class="mb-2">
+                    <p class="mb-3">Want to register as?</p>
+                    <div >
+                        <label class="form-control">Buyer :
+                            <input type="radio" class="form-check-input go" name="role" id="buyer" value="buyer" > 
+                            </label>
+                    </div>
+                    <div>
+                        <label class="form-control">Seller :
+                            <input type="radio" class="form-check-input go" name="role" id="seller" value="seller">
+                            </label>
+                        
+                    </div>
+                </div>
+                <input name="username" type="text" placeholder="Name">
+                <input name="email" type="email" placeholder="Email">
+                <input name="password" type="password" placeholder="Password"><br>
+                <div style="display: flex;justify-content: center;align-items: center;">
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                    <span style="padding-bottom: 2px;">I accept terms and conditions</span>
+                </div>
+                <button type="submit" style="border-radius: 15px;width: 350px;">Sign Up</button>
+        </form>
+    </div>
+    </div>
